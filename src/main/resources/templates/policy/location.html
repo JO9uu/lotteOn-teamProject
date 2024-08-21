@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{/policy/layout/policyLayout.html}">
+
+            <section class="location" layout:fragment="content">
+                <nav>
+                  <h1>LotteON 서비스 이용약관</h1>
+                  <ul>
+                    <li><a th:href="@{/policy/buyer}">구매회원 약관</a></li>
+                    <li><a th:href="@{/policy/seller}">판매회원 약관</a></li>
+                    <li><a th:href="@{/policy/finance}">전자금융거래 약관</a></li>
+                    <li class="on"><a th:href="@{/policy/location}">위치정보이용 약관</a></li>
+                    <li><a th:href="@{/policy/privacy}">개인정보수집 방침</a></li>
+                  </ul>
+                </nav>
+                <article>
+                  <h2>위치정보 이용약관</h2>
+                  <p>
+                    <span class="tit">제1조(목적)</span>
+                    <textarea class="content" readonly>[[${policy.chapter1}]]</textarea>
+                  </p>
+
+                </article>
+            </section>
+
+
+</html>
